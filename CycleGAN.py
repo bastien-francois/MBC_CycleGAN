@@ -39,7 +39,6 @@ import dcor
 from statsmodels.tsa.stattools import acf
 
 ##################################################################################
-#### Ne pas toucher
 def load_RData_minmaxrank(rank_version,RData_file,variable,index_temporal, region='Paris'):
     load_data = robjects.r.load(RData_file + '.RData') #format LON_Lat_Time
     dataset=robjects.r[variable]
